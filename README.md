@@ -15,6 +15,40 @@
   So for me, DevOps was and will always be more about having a flexible mindset and collaborative culture within the organization, and less about the tools specifically. That does not mean that I deny the benefits of these tools and do not give them importance, but I would prefer a team or an individual that is more receptive and open to a DevOps culture than someone with a knowledge of the entire DevOps toolchain but is rigid and unwilling to learn or change.
   And what makes me happy is that I now see a lot of people and organizations understanding the importance of DevOps culture and not just the DevOps toolchain.
 
+# Monitoring:
+When developing for reliability or implementing resilient DevOps practices, the heart of your decision-making is data. Without carefully monitoring key metrics like uptime, network load, and resource usage, you’ll be blind to where to spend development efforts or refine operation practices. Fortunately, a wide variety of monitoring tools are available to help you collect and get visibility into this data.
+While it might be tempting to try to monitor absolutely everything in your system, more focused monitoring will be easier to implement and leave you with more actionable data. SRE practices like SLOs are most useful when based on metrics for customer impact. Deciding what and how to monitor is an important decision. We’ll walk you through the basics in this blog post. We’ll also suggest a few popular monitoring tools for your consideration.
+
+## Where to implement monitoring
+It’s important to decide where in your system architecture you’ll implement monitoring. This will allow you to develop your architecture around the monitoring tool, rather than having to retrofit existing code. Depending on the location of implementation, monitoring tools will be able to observe different types of data. Here’s a breakdown of the most common types of monitoring implementations, along with examples of tools offering that type of monitoring:
+### Resource monitoring:
+Also known as server monitoring or infrastructure monitoring, this operates by gathering data on how your servers are running. Resource monitoring tools report on RAM usage, CPU load, and remaining disk space. In architectures with physical servers, information on hardware health—like CPU temperatures and component uptime—can also be helpful to avoid server failure. In cloud-based environments, aggregates of your virtual server system are more useful. 
+### Network monitoring:
+This looks at the data coming in and out of your computer network. Your monitoring tool captures all incoming requests and outgoing responses across all components such as switches, firewalls, servers, and more. The data collected from network monitoring can be as simple as the total amount of data coming and going or as nuanced as the frequency of particular requests. 
+### Application performance monitoring:
+APM solutions collect data on how an overall service is performing. These tools will send their own requests to the service and track metrics such as the speed and completeness of the response. The goal is to drive detection and diagnosis of application performance issues to ensure services perform at expected levels. 
+### Third-party component monitoring:
+This involves monitoring the health and availability of third-party components in your architecture. In this era of microservices, it’s likely that your service depends on the proper functioning of external services, from cloud hosting to ad servers. Like application performance monitoring, tools can check the status of these services with their own requests. 
+You will likely want to include some of each type of monitoring in your overall solution. Prioritize having robust, redundant monitoring tools to ensure potential issues aren’t missed. At the same time, metrics and alerts should be tied to services to ensure relevance with business impact.
+## What you need from your data
+Having actionable data isn’t just about the data itself; in order to respond properly to what your monitoring tools are reporting, you need to have that data presented in the most useful way. Here are some things that monitoring tools can do for you:
+
+- Trigger alerts when metrics exceed certain thresholds
+- Create logs of events, highlighting based on parameters
+- Create graphs of metrics over time
+- Provide a dashboard of key service health components at a glance
+- Create databases of logs that can be queried
+
+When making development decisions or responding to an incident, try to get in the habit of asking yourself, “What would I need to be looking at right now to make the best choice?”. Visualize what data it would contain and the metrics that matter.
+
+## Open source vs purchased
+Another important point to consider is where you’ll find your monitoring tools and who will maintain them. There are both open source and purchasable tools with their own pros and cons.
+
+### Open source monitoring tools 
+These tools are free, which is an advantage for companies with limited tooling budgets. They’re also completely customizable, allowing you to integrate them into your own architecture. However, this customization will require dedicated development time and perhaps specialized knowledge. Furthermore, there is no SLA guaranteeing availability, security, update frequency, etc. Your team would own these responsibilities.
+
+### Purchased monitoring tools
+These tools cost but offer  robustness that open source tools cannot. The service provider will be accountable for keeping the tool functioning and up-to-date. The provider will likely offer customer service, training, documentation, and other resources to help you integrate the tool with your stack. In the era of reliability, making investments to ensure your monitoring eyes are always open is worth considering.
 
 # Monitoring in DevOps:
  will first try to understand the concept of usage of DevOps tools in totality. We will also try to understand the advantages that these tools bring to the table if they are deployed to our Production grade environments. Alongside the benefits that these bring to the table, there are also pointers that these try to show on how the applications are maintained in a better manner for the best to reap. DevOps can be best understood as the gap that can be bridged to bring in both the software development and the IT operations together. By bringing in both these extremes to one, there will be a better and a responsible team of individuals who would respond to the situation accordingly rather than waiting on each other to do their particular responsibilities.
@@ -38,16 +72,22 @@
    The data thus collected with this application finds its use in Business Intelligence space as well
    It can provide fairly simple pre-made docker images and also other pre-made configurations for similar tools as like Docker.
 
-  ### 2.Sensu:
+  ### 2.Solarwinds:
+   This app offers several products, each specializing in different areas of monitoring: Network Management, Systems Management, Database Management, IT Security, IT Service Management, Application Management, and Managed Service Providers. Each can be tried for free.
+
+  ### 3.Sensu:
    A flexible and scalable telemetry and service health checking solution for monitoring servers, containers, services, applications, functions, and connected devices.
 
-  ### 3.Nagios:
+  ### 4.Nagios:
    The legacy monitoring tool that introduced monitoring practices to a generation of operators.
+   Nagios provides application, network, and server monitoring using a combination of agentless and agent-based software tools for Unix, Linux, Windows and web environments. The system offers uptime, response, and availability using a variety of reporting formats and visualization.
 
-  ### 4.OpManager:
+  ### 5.OpManager:
+   OpManager is an end-to-end network management software for heterogeneous, multi-vendor enterprise IT networks. It offers a unified approach to scale and manage distributed IT infrastructure, advanced fault and performance management functionality across critical IT resources viz. network devices, WAN or VoIP links, servers, virtual servers (VMware and Hyper-V), Domain controllers, MS Exchange, MS SQL and other IT infrastructure components.
+   Applications Manager provides you with critical information (like CPU and memory usage, thread count and PGSQL database details) essential to track the performance of OpManager. Let’s take a look at what you need to see to monitor OpManager and the performance metrics to gather with Applications Manager
 
-  ### 5.Zabbix:
-
+  ### 6.Zabbix:
+   This app  is a mature and effortless enterprise-class open source monitoring solution for network monitoring and application monitoring of millions of metrics.
 
  ## DevOps Configuration Management Tools:
   Configuration management tools allow you to automate the provisioning and deployment of systems, enforce desired configurations, and remediate configuration drift. By modeling your infrastructure as code, you can apply software delivery practices like version control, automated testing, and continuous delivery to infrastructure and applications.
