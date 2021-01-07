@@ -1,3 +1,16 @@
+
+Table of Contents
+1. [What's My Definition of DevOps:](#what'sMyDefinitionofDevOps:)
+    1. [The 3Cs of DevOps:](The3CsofDevOps:)
+2. [Monitoring:](#Monitoring:)
+3. [Where to implement monitoring](#Wheretoimplementmonitoring)
+    1. [Resource monitoring:](#Resourcemonitoring:)
+4. [What you need from your data](#Whatyouneedfromyourdata)
+.
+.
+.
+
+
 # What's My Definition of DevOps:
  DevOps = Developer + Operations
  So we always had a developer who writes the code, maybe a build/release team that will do deployment in different environments, and a Operations person who owns and manages the infrastructure. In other words, a typical pre-DevOps era setup, with minimal or no automation.
