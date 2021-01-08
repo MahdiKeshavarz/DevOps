@@ -3,9 +3,38 @@ Table of Contents
 1. [What's My Definition of DevOps:](#whats-my-definition-of-devops)
     1. [The 3Cs of DevOps:](#the-3cs-of-devops)
 2. [Monitoring:](#monitoring)
-3. [Where to implement monitoring](#where-to-implement-monitoring)
-    1. [Resource monitoring:](#resource-monitoring)
-4. [What you need from your data](#what-you-need-from-your-data)
+    1. [Where to implement monitoring](#where-to-implement-monitoring)
+        1. [Resource monitoring:](#resource-monitoring)
+        2. [Network monitoring](#network-monitoring)
+        3. [Application performance monitoring](#application-performance-monitoring)
+        4. [Third-party component monitoring](#third-party-component-monitoring)
+    2. [What you need from your data](#what-you-need-from-your-data)
+    3. [Open source vs purchased](#open-source-vs-purchased)
+        1. [Open source monitoring tools](#open-source-monitoring-tools)
+        2. [Purchased monitoring tools](#purchased-monitoring-tools)
+3. [Monitoring in DevOps](#monitoring-in-devops)
+    1. [DevOps Monitoring Tools](#devops-monitoring-tools)
+        1. [Prometheus]()
+        2. [Solarwinds]()
+        3. [Sensu]()
+        4. [Nagios]()
+        5. [OpManager]()
+        6. [Zabbix]()
+    2. [DevOps Configuration Management Tools]()
+        1. [Ansible]()
+        2. [Chef]()
+        3. [Puppet]()
+    3. [DevOps Alerting Tools]()
+        1. [PagerDuty]()
+        2. [ServiceNow]()
+        3. [Slack]()
+    4. [DevOps Visualization Tools]()
+        1. [Grafana]()
+    5. [Metrics Storage]()
+        1. [Splunk]()
+        2. [InfluxDB]()
+        3. [AWS]()
+
 .
 .
 .
@@ -154,7 +183,3 @@ These tools cost but offer  robustness that open source tools cannot. The servic
    Time-series database that’s suited for long-term data storage.
   ### 3.AWS:
    Supports a wide range of storage purposes, including relational and non-relational databases, a data warehouse for analytics, a time-series database, a ledger database to store transactions, and more.
-
- ## Next Steps: Evaluating Your DevOps Tools:
-  No matter where you are in your DevOps journey, it’s wise to re-evaluate the tools you’re using and identify where you can fine-tune. Think about the DevOps tools in the monitoring ecosystem as more than their capabilities; how you use them begins to define your habits, values, and work culture — and accordingly, the quality of your product or service and the value you bring to your users.
-  To learn more about how DevOps tools work together — and their place within the monitoring ecosystem — be sure to visit Bonsai, the Sensu asset index, where you can search and discover monitoring use cases as well as many of the above-mentioned solutions and integrations.
