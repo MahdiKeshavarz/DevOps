@@ -1,11 +1,11 @@
 
 Table of Contents
 1. [What's My Definition of DevOps:](#whats-my-definition-of-devops)
-    1. [The 3Cs of DevOps:](The3CsofDevOps:)
-2. [Monitoring:](#Monitoring:)
-3. [Where to implement monitoring](#Wheretoimplementmonitoring)
-    1. [Resource monitoring:](#Resourcemonitoring:)
-4. [What you need from your data](#Whatyouneedfromyourdata)
+    1. [The 3Cs of DevOps:](#the-3cs-of-devops)
+2. [Monitoring:](#monitoring)
+3. [Where to implement monitoring](#where-to-implement-monitoring)
+    1. [Resource monitoring:](#resource-monitoring)
+4. [What you need from your data](#what-you-need-from-your-data)
 .
 .
 .
