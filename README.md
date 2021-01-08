@@ -1,5 +1,7 @@
 
-Table of Contents
+<details>
+<summary>Table of Contents</summary>
+
 1. [What's My Definition of DevOps:](#whats-my-definition-of-devops)
     1. [The 3Cs of DevOps:](#the-3cs-of-devops)
 2. [Monitoring:](#monitoring)
@@ -34,7 +36,7 @@ Table of Contents
         1. [Splunk](#1splunk)
         2. [InfluxDB](#2influxdb)
         3. [AWS](#3aws)
-
+</details>
 
 # What's My Definition of DevOps:
  DevOps = Developer + Operations
